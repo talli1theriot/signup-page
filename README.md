@@ -13,3 +13,4 @@ Live site :
 | 1 | Opened anew file with README.md | Initial commit | main |
 | 2 | Created new site skeleton | Built the skeleton | main |
 | 3 | Created style with CSS | Built the css (Rough Draft) | main |
+| 4 | Added padding on CSS for HTML, Updated README.md | Add box around section, updated README | main |
