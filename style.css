@@ -1,0 +1,23 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 24px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px #ccc;
+  text-color: #333;
+}
+ style.css
+h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-shadow: 2px 2px #ccc;
+  text-color: #333;
+}
