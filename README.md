@@ -14,3 +14,5 @@ Live site :
 | 2 | Created new site skeleton | Built the skeleton | main |
 | 3 | Created style with CSS | Built the css (Rough Draft) | main |
 | 4 | Added padding on CSS for HTML, Updated README.md | Add box around section, updated README | main |
+| 5 | Added script.js | Added JavaScript | main |
+| 6 | Updated README.md | Updated README.md | main |
