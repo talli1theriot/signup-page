@@ -12,7 +12,8 @@
  
     <header>
         <h1>Watch Party Signup</h1>
-        <p>Sign up for our watch party!</p>
+        <p>Grab your snacks, get comfy, and watch with us!</p>
+        <p>Movies, sports, laughs, and new friends!</p>
     </header>
 
     <nav>
@@ -24,22 +25,123 @@
     <main>
         <section id="about" class="box">
             <h2>About Us</h2>
-            <p>Welcome to our watch party!</p>
+            <p>Welcome to the Watch Party Crew! We are building a fun virtual community where friends can hang out, meet new people, watch movies, and enjoy their favorite watches together.</p>
+            <p>From chick flicks and horror movie nights to college football, and UFC. There is something for everyone! Whether you love movies, reality TV, scary movies, or sports, come hang out and be part of the fun.</p>
         </section>
 
         <section id="schedule" class="box">
             <h2>Our Schedule</h2>
-            <p>Check out our schedule!</p>
+            <p>Here is our planned weekly lineup! Specific dates, times, and viewing details will be announced as they are finalized.</p>
+                            <br>
+                <div class="schedule-grid">
+                    <div class="schedule-item">
+                        <h3>Monday</h3>
+                        <p>Movie Night: Romance and Chick Flicks</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Tuesday</h3>
+                        <p>Comedy Night: Stand-up and Sitcoms</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Wednesday</h3>
+                        <p>Horror Night: Scary Movies and Thrillers</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Thursday</h3>
+                        <p>Drama Night: Teen Shows and Dramas</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Friday</h3>
+                        <p>Action Night: Adventure and Superheroes</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Saturday</h3>
+                        <p>Sports Night: Football, UFC, and Boxing</p>
+                    </div>
+                    <div class="schedule-item">
+                        <h3>Sunday</h3>
+                        <p>Award Shows and Live Events</p>
+                    </div>
+                </div>
+
+                        <br>
+
+            <h4>Genres We Cover</h4>
+                <ul class="genre-list">
+                    <li>Romance and chick flicks</li>
+                    <li>Comedy and stand-up</li>
+                    <li>Horror and scary movies</li>
+                    <li>Thrillers, mysteries, and suspense</li>
+                    <li>Drama and teen shows</li>
+                    <li>Action and adventure</li>
+                    <li>Fantasy, superheroes, and sci-fi</li>
+                    <li>Reality TV and dating shows</li>
+                    <li>Documentaries and true crime</li>
+                    <li>Throwback movies and classic sitcoms</li>
+                    <li>Animated movies</li>
+                    <li>Football</li>
+                    <li>UFC and boxing</li>
+                    <li>Other sports and major sporting events</li>
+                    <li>Award shows and live events</li>
+                </ul>
+            
         </section>
 
-        <section id="join" class="box">
+        <section id="join" class="box"> 
             <h2>Join Us</h2>
             <p>Sign up to join the party!</p>
+
+                <form id="signupForm">
+
+                    <label for="name">Name/Nickname:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        
+                        <br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        
+                        <br>
+
+                    <label for="favorite">What would you most like to watch?</label>
+                    <select id="favorite" name="favorite" required>
+                        <option value="">Choose your favorite</option>
+                        <option value="Romance and Chick Flicks">Romance & Chick Flicks</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Thrillers and Mysteries">Thrillers & Mysteries</option>
+                        <option value="Action and Adventure">Action & Adventure</option>
+                        <option value="Fantasy and Sci-Fi">Fantasy & Sci-Fi</option>
+                        <option value="Reality TV">Reality TV</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Documentaries and True Crime">Documentaries & True Crime</option>
+                        <option value="Throwback Movies and Shows">Throwback Movies & Shows</option>
+                        <option value="Animated Movies">Animated Movies</option>
+                        <option value="Football">Football</option>
+                        <option value="UFC and Boxing">UFC & Boxing</option>
+                        <option value="Other Sports">Other Sports</option>
+                        <option value="Award Shows and Live Events">Award Shows & Live Events</option>
+                        <option value="Everything">Everything!</option>
+                    </select>
+
+                        <br>
+
+                    <label for="specialRequests">Anything we should know?</label>
+                    <textarea id="specialRequests" name="specialRequests" placeholder="Let us know if you have any special requests or questions!" rows="4"></textarea>
+                        
+                        <br>
+
+                    <button type="submit">Join the Crew!</button>
+                    <p id="signupMessage" aria-live="polite"></p>
+                
+                </form>
+
         </section>
     </main>
 
     <footer>
-        <p>Created with ❤️ by Talli Theriot @ CodeX Academy; 2026</p>
+        <p>Created with <3 by Talli Theriot @ CodeX Academy | 2026</p>
+        <p>Good friends. Great shows. Even better watch parties!</p>
     </footer>
 
     <script src="script.js"></script>
