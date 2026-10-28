@@ -3,7 +3,7 @@ console.log("Hello from script.js");
 let clubname = "Watch Party";
 console.log("Welcome to the "+ clubname);
 
-let meetingDay = "Monday (new weekly overlook)";
+let meetingDay = "Monday (new weekly overview)";
 console.log("We meet on: " + meetingDay);
 
 function sayHi() {
@@ -19,10 +19,26 @@ function sayBye() {
 sayBye();
 sayBye();
 
-let nextButton = document.querySelector("#nextBtn");
+let nextButton = document.querySelector("#next-btn");
 let nextMeeting = document.querySelector("#next-meeting");
 
 function showNextMeeting() {
-    nextMeeting.textContent = "Our next watch party date and time are still being planned. Join the crew to stay updated!"; }
+    nextMeeting.textContent = "Our next watch party date and time are still being planned. Join the crew to stay updated!"; 
+}
 
-    nextButton.addEventListener("click", showNextMeeting);
+
+nextButton.addEventListener("click", showNextMeeting);
+
+
+let signupForm = document.querySelector("#signupForm");
+
+signupForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    let name = document.querySelector("#name").value.trim();
+    let favorite = document.querySelector("#favorite").value;
+    let signupMessage = document.querySelector("#signupMessage");
+
+    signupMessage.textContent =
+        "Welcome to the crew, " + name +"! We can't wait to watch " + favorite +" with you!";
+});
