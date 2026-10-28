@@ -11,9 +11,9 @@
 <body>
  
     <header>
-        <h1>Watch Party Signup</h1>
-        <p>Grab your snacks, get comfy, and watch with us!</p>
-        <p>Movies, sports, laughs, and new friends!</p>
+        <h1>Watch Party</h1>
+        <p id="tagline">Grab your snacks, get comfy, and watch with us!</p>
+        <p id="tagline">Movies, sports, laughs, and new friends!</p>
     </header>
 
     <nav>
@@ -25,7 +25,8 @@
     <main>
         <section id="about" class="box">
             <h2>About Us</h2>
-            <p>Welcome to the Watch Party Crew! We are building a fun virtual community where friends can hang out, meet new people, watch movies, and enjoy their favorite watches together.</p>
+            <p>Welcome to the Watch Party Crew!</p>
+            <p>We are building a fun virtual community where friends can hang out, meet new people, watch movies, and enjoy their favorite watches together.</p>
             <p>From chick flicks and horror movie nights to college football, and UFC. There is something for everyone! Whether you love movies, reality TV, scary movies, or sports, come hang out and be part of the fun.</p>
         </section>
 
@@ -66,7 +67,7 @@
 
                         <br>
 
-            <h4>Genres We Cover</h4>
+            <h3>Genres We Cover</h3>
                 <ul class="genre-list">
                     <li>Romance and chick flicks</li>
                     <li>Comedy and stand-up</li>
@@ -93,17 +94,17 @@
 
                 <form id="signupForm">
 
-                    <label for="name">Name/Nickname:</label>
+                    <label for="name" id="name-label">Name/Nickname:</label>
                     <input type="text" id="name" name="name" placeholder="Enter your name" required>
                         
                         <br>
 
-                    <label for="email">Email Address:</label>
+                    <label for="email" id="email-label">Email Address:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
                         
                         <br>
 
-                    <label for="favorite">What would you most like to watch?</label>
+                    <label for="favorite" id="favorite-label">What would you most like to watch?</label>
                     <select id="favorite" name="favorite" required>
                         <option value="">Choose your favorite</option>
                         <option value="Romance and Chick Flicks">Romance & Chick Flicks</option>
@@ -126,12 +127,12 @@
 
                         <br>
 
-                    <label for="specialRequests">Anything we should know?</label>
+                    <label for="specialRequests" id="specialRequests-label">Anything we should know?</label>
                     <textarea id="specialRequests" name="specialRequests" placeholder="Let us know if you have any special requests or questions!" rows="4"></textarea>
                         
                         <br>
 
-                    <button type="submit">Join the Crew!</button>
+                    <button id="nextButton">Join the Crew!</button>
                     <p id="signupMessage" aria-live="polite"></p>
                 
                 </form>
