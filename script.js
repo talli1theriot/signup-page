@@ -26,9 +26,7 @@ function showNextMeeting() {
     nextMeeting.textContent = "Our next watch party date and time are still being planned. Join the crew to stay updated!"; 
 }
 
-
 nextButton.addEventListener("click", showNextMeeting);
-
 
 let signupForm = document.querySelector("#signupForm");
 

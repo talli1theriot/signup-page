@@ -137,3 +137,18 @@ input:user-invalid {
   color: #fff;
   text-align: center;
 }
+
+.cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 200px;
+  background-color: rgba(40, 0, 0, 0.9);
+  border: 2px solid #811b1b;
+  border-radius: 8px;
+  padding: 16px;
+
+}
