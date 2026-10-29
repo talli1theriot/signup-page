@@ -26,6 +26,7 @@ nav{
   background-color: rgba(40, 0, 0, 0.9);
   padding: 20px;   
   text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 nav a {
@@ -94,13 +95,14 @@ label {
 input, select, textarea {
   display: block;
   width: 100%;
-  max-width: 30rem;
+  max-width: 100%;
   padding: 10px;
   font: inherit;
-  margin: 0 auto 16px auto;
+  margin: 0 auto;
   border: 1px solid #ece4e4;
   border-radius: 4px;
   color: #967c7c;
+  box-sizing: border-box;
 }
 
 button {
@@ -151,4 +153,24 @@ input:user-invalid {
   border-radius: 8px;
   padding: 16px;
   margin: 25px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.compare * {
+  outline: 2px dashed
 }

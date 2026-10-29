@@ -49,8 +49,14 @@
                 <h3>3. Have Fun!</h3>
                 <p>Join us for an entertaining experience where you can relax, socialize, and enjoy great content with fellow enthusiasts.</p>
             </div>
-            
             </div>
+        </section>
+
+        <section id="how-built" class="compare">
+            <h2>How this page was built</h2>
+            <p><div><p>This is a div and a block element.</p></div></p>
+            <p>This is a paragraph and a block element with a <span>span tag</span>and a <href="#join">link</href></p>
+            <p>Block elements start on a new line and take up the full space of the container, inline elements do not start on a new line and only takes up the required space.</p>
         </section>
 
         <section id="schedule" class="box">
@@ -119,21 +125,30 @@
 
                 <form id="signupForm">
 
+                <div class="field">
                     <label for="name" id="name-label">Name/Nickname:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                        
-                        <br>
+                    <input type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Enter your name" required>
+                </div> 
 
+                <div class="field">
                     <label for="email" id="email-label">Email Address:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                        
-                        <br>
+                    <input type="email" 
+                    id="email" 
+                    name="email" placeholder="Enter your email" required>
+                </div>     
 
-                        <label for="password">Create a Password:</label>
-                        <input type="password" id="password" name="password" required>                        
-                        
-                        <br>
+                <div class="field">
+                    <label for="password">Create a Password:</label>
+                    <input type="password" 
+                    id="password" 
+                    name="password" 
+                    placeholder="Create a password" required>                        
+                </div>      
 
+                <div class="field">
                     <label for="favorite" id="favorite-label">What would you most like to watch?</label>
                     <select id="favorite" name="favorite" required>
                         <option value="">Choose your favorite</option>
@@ -154,17 +169,21 @@
                         <option value="Award Shows and Live Events">Award Shows & Live Events</option>
                         <option value="Everything">Everything!</option>
                     </select>
+                </div>
 
-                        <br>
-
+                <div class="field"> 
                     <label for="specialRequests" id="specialRequests-label">Anything we should know?</label>
-                    <textarea id="specialRequests" name="specialRequests" placeholder="Let us know if you have any special requests or questions!" rows="4"></textarea>
-                        
-                        <br>
+                    <textarea id="specialRequests" 
+                    name="specialRequests" 
+                    placeholder="Let us know if you have any special requests or questions!" 
+                    rows="4"></textarea>
+                </div>   
 
+                <div class="field">
                     <button id="nextButton" type="submit">Join the Crew!</button>
                     <p id="signupMessage" aria-live="polite"></p>
-                
+                </div>
+
                 </form>
 
         </section>
