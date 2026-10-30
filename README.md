@@ -1,5 +1,5 @@
 # signup-page
-Live site :
+Live site : https://talli1theriot.github.io/signup-page/
 ## My setup
 - Operating system: Windows
 - Editor: VS Code

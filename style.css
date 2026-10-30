@@ -44,10 +44,11 @@ nav a:hover {
 h1 {
   text-align: center;
   text-decoration: underline;
-  text-shadow: 2px 2px 5px #811b1b;
+  text-shadow: 2px 2px 5px #6a3838;
   color: #ac1e1e;
-  font-size: 40px;
-  background-color: rgba(40, 0, 0, 0.9);
+  font-size: 60px;
+  background-color: rgba(17, 9, 9, 0.9);
+  font-family:'Courier New', Courier, monospace;
 }
 
 h2 {
@@ -172,5 +173,47 @@ form {
 }
 
 .compare * {
-  outline: 2px dashed
+  outline: 2px dashed white;
+}
+
+.Dates {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+:root{
+  --brand: darkred;
+  --page-bg: black;
+}
+
+.build{
+  border: 2px dashed white;
+  color: white;
+  text-align: center;
+  margin: 10px;
+}
+
+.hero{background-color: rgba(75, 2, 2, 0.9);
+color: white;
+padding: 64px 24px;
+text-align: center;
+margin-top: 32px;
+border-radius: 16px;
+}
+
+.cta{ 
+  display: inline-block;
+  background-color: #e25656;
+  color: #000;
+  border: #ac1e1e solid;
+  border-radius: 8px;
+  padding: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+@media (min-width: 700px) {
+  .hero h2{
+    font-size: 3 rem;
+  }
 }
